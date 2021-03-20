@@ -5,14 +5,16 @@ import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 
-import { WarningAlertComponent } from './warningAlert/warningalert.component'
+import { WarningAlertComponent } from './warningAlert/warningalert.component';
+import { SuccessMessageComponent } from './success-message/success-message.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
     ServersComponent,
-    WarningAlertComponent
+    WarningAlertComponent,
+    SuccessMessageComponent,
   ],
   imports: [
     BrowserModule
