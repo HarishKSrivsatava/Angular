@@ -9,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
 
-  constructor() { }
+  allowNewServer = false;
+  serverCreationStatus = 'No server was created'
+  serverName : string = '';
+  constructor() {
+    setTimeout(() => {
+      this.allowNewServer = true},3000)
+   }
 
   ngOnInit(): void {
   }
+
+  onClickServer(){
+        return this.serverCreationStatus = 'New server is created now';
+  }
+
+  onUpdateServerName(event: Event){
+    this.serverName = (<HTMLInputElement>event.target).value;
+  }
+
 
 }
