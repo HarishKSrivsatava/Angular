@@ -1,5 +1,10 @@
 <h3> test-server-component </h3>
 <!-- String Interpolation-->
-<p> {{'Server'}} with serverId {{serverId}} is {{status}}</p>
-<p> {{'Server'}} is  {{getStatus()}}</p>
+<!-- <p> {{'Server'}} with serverId {{serverId}} is {{status}}</p> -->
+<!-- <p> {{'Server'}} is  {{getStatus()}}</p> -->
 
+<p [ngStyle]="{backgroundColor: getColor()}"
+   [ngClass]="{online: status === 'online'}" 
+   > {{'Server'}} with serverId {{serverId}} 
+    is {{status}}
+</p>
