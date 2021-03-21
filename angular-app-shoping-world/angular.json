@@ -24,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap3/dist/css/bootstrap-theme.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap-theme.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-app-shoping-world"
+    }
+  },
+  "defaultProject": "angular-app-shoping-world",
+  "cli": {
+    "analytics": false
+  }
 }
