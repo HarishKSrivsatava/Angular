@@ -4,11 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { RecipesComponent } from './recipes/recipes.component';
-import { RecipesListComponent } from './receipe/recipes-list/recipes-list.component';
-import { RecipesDetailsComponent } from './receipe/recipes-details/recipes-details.component';
-import { RecipeItemComponent } from './receipe/recipes-list/recipe-item/recipe-item.component';
-import { ShoppingListComponent } from './shopping-list/shopping-list.component';
-import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component'
+import { RecipesListComponent } from './recipes/recipes-list/recipes-list.component';
+import { RecipesDetailsComponent } from './recipes/recipes-details/recipes-details.component'
+import { RecipeItemComponent } from './recipes/recipes-list/recipe-item/recipe-item.component'
+import { ServerComponent } from './server/server.component'
+import { FormsModule } from '@angular/forms';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component'
 
 @NgModule({
   declarations: [
@@ -18,11 +19,12 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     RecipesListComponent,
     RecipesDetailsComponent,
     RecipeItemComponent,
-    ShoppingListComponent,
-    ShoppingEditComponent
+    ServerComponent,
+    ShoppingListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

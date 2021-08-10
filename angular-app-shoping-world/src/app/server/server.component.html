@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>AngularAppShopingWorld</title>
+        <base href="/">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+      </head>
+    <body>
+        <p id="first">This is server.component.html file</p> 
+        <p id="second">Fetching the value from component by using String interpolation</p> 
+        Server Status : {{status}} <!-- String Interpolation -->
+        <p id="third">Fetching the value from component using Proprty Binding</p>
+        <button class="btn btn primary" 
+                [disabled] ="!allowNewServer">
+        Test Server</button>
+        <!-- Server status : [allowNewServer] ="!allowNewServer" -->
+        <p>Event Binding</p>
+        Server Creation Status : {{serverCreationStatus}}<br>
+        <button class="btn btn primary"
+        (click) = "onClickServer()">Add New Server</button><br>
+        Server Creation Status : {{serverCreationStatus}}
+
+        <p>Two ways Binding</p>
+        <!-- For using the two ways binding , we have to enable the ngModel directive. 
+            This can be done by adding the FormsModule to the import[] array in AppModule.
+        -->
+        <input
+                type="text"
+                class="form-control" 
+                [(ngModel)]="serverName"/>
+        <br>        
+        Server Name : {{serverName}} <!--String Inerpolation-->
+    </body>
+</html>
+
